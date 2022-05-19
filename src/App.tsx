@@ -27,7 +27,7 @@ const App : FC = () => {
 
   const completeList = (listNameToDelete: string): void => {
     setGroceriesList(groceriesList.filter((list) => {
-    return list.listName != listNameToDelete;
+    return list.listName !== listNameToDelete;
     })
     );
   };
